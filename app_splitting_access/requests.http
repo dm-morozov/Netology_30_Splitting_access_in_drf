@@ -1,0 +1,45 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=PyCharm
+
+###
+
+GET http://localhost:8000/api/adv/
+Authorization: Token 918e4aa1bdca380e3bc441073bb7f0fac593afe6
+
+###
+
+POST http://localhost:8000/api/adv/
+Content-Type: application/json
+Authorization: Token 918e4aa1bdca380e3bc441073bb7f0fac593afe6
+
+{
+  "text": "Объявление от имени {{ user }}"
+}
+
+
+###
+DELETE http://localhost:8000/api/adv/1/
+Authorization: Token 918e4aa1bdca380e3bc441073bb7f0fac593afe6
+
+###
+
+POST http://localhost:8000/api/adv/
+Content-Type: application/json
+Authorization: Token 030f73788f806afbb73ed44a3b3b3e32b5c59473
+
+{
+  "text": "Объявление от имени {{ user }}"
+}
+
+###
+
+DELETE http://localhost:8000/api/adv/2/
+Authorization: Token 030f73788f806afbb73ed44a3b3b3e32b5c59473
+
+###
+
+GET http://localhost:8000/api/adv/5/
+Authorization: Token 030f73788f806afbb73ed44a3b3b3e32b5c59473
+
+###
